@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CALCULATOR</string>
+    <string name="action_settings">Settings</string>
+    <string name="a">1</string>
+    <string name="y">7</string>
+    <string name="o">2</string>
+    <string name="p">3</string>
+    <string name="i">4</string>
+    <string name="l">5</string>
+</resources>

@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>content_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { font-style: italic; }
+.s1 { color: rgb(0,0,255); font-weight: bold; }
+.s2 { }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+.s4 { color: rgb(0,0,128); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+content_main.xml</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">&lt;?</span><span class="s1">xml version=</span><span class="s3">&quot;1.0&quot; </span><span class="s1">encoding=</span><span class="s3">&quot;utf-8&quot;</span><span class="s0">?&gt;</span><span class="s2"> 
+&lt;</span><span class="s4">RelativeLayout </span><span class="s1">xmlns:android=</span><span class="s3">&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="s2"> 
+    </span><span class="s1">xmlns:app=</span><span class="s3">&quot;http://schemas.android.com/apk/res-auto&quot;</span><span class="s2"> 
+    </span><span class="s1">xmlns:tools=</span><span class="s3">&quot;http://schemas.android.com/tools&quot;</span><span class="s2"> 
+    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+    </span><span class="s1">android:paddingBottom=</span><span class="s3">&quot;@dimen/activity_vertical_margin&quot;</span><span class="s2"> 
+    </span><span class="s1">android:paddingLeft=</span><span class="s3">&quot;@dimen/activity_horizontal_margin&quot;</span><span class="s2"> 
+    </span><span class="s1">android:paddingRight=</span><span class="s3">&quot;@dimen/activity_horizontal_margin&quot;</span><span class="s2"> 
+    </span><span class="s1">android:paddingTop=</span><span class="s3">&quot;@dimen/activity_vertical_margin&quot;</span><span class="s2"> 
+    </span><span class="s1">app:layout_behavior=</span><span class="s3">&quot;@string/appbar_scrolling_view_behavior&quot;</span><span class="s2"> 
+    </span><span class="s1">tools:context=</span><span class="s3">&quot;com.example.sohamchatterjee.example2.MainActivity&quot;</span><span class="s2"> 
+    </span><span class="s1">tools:showIn=</span><span class="s3">&quot;@layout/activity_main&quot;</span><span class="s2">&gt; 
+ 
+ 
+    &lt;</span><span class="s4">TextView</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;100px&quot;</span><span class="s2"> 
+        </span><span class="s1">android:textAppearance=</span><span class="s3">&quot;?android:attr/textAppearanceLarge&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;Enter your expression&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/textView&quot;</span><span class="s2"> 
+        </span><span class="s1">android:visibility=</span><span class="s3">&quot;visible&quot;</span><span class="s2"> 
+        </span><span class="s1">android:background=</span><span class="s3">&quot;#fffff1&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentTop=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentRight=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentEnd=</span><span class="s3">&quot;true&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">style=</span><span class="s3">&quot;?android:attr/buttonStyleSmall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;150dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;C&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/bclear&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculatedelall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_below=</span><span class="s3">&quot;@+id/textView&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentLeft=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentStart=</span><span class="s3">&quot;true&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">style=</span><span class="s3">&quot;?android:attr/buttonStyleSmall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;150dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;del&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/bdel&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignBottom=</span><span class="s3">&quot;@+id/bclear&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignRight=</span><span class="s3">&quot;@+id/textView&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignEnd=</span><span class="s3">&quot;@+id/textView&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculatedel&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">style=</span><span class="s3">&quot;?android:attr/buttonStyleSmall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;90dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;+&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/badd&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_below=</span><span class="s3">&quot;@+id/bclear&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentLeft=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentStart=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_marginTop=</span><span class="s3">&quot;28dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculatea&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">style=</span><span class="s3">&quot;?android:attr/buttonStyleSmall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;90dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;-&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/bsub&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignTop=</span><span class="s3">&quot;@+id/badd&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toRightOf=</span><span class="s3">&quot;@+id/badd&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toEndOf=</span><span class="s3">&quot;@+id/badd&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculates&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">style=</span><span class="s3">&quot;?android:attr/buttonStyleSmall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;95dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;*&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/bmul&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignTop=</span><span class="s3">&quot;@+id/bsub&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toRightOf=</span><span class="s3">&quot;@+id/bsub&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toEndOf=</span><span class="s3">&quot;@+id/bsub&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculatem&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">style=</span><span class="s3">&quot;?android:attr/buttonStyleSmall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;90dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;/&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/bdiv&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignBottom=</span><span class="s3">&quot;@+id/bmul&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toRightOf=</span><span class="s3">&quot;@+id/bmul&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toEndOf=</span><span class="s3">&quot;@+id/bmul&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculated&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">style=</span><span class="s3">&quot;?android:attr/buttonStyleSmall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;150dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;0&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b0&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate0&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_below=</span><span class="s3">&quot;@+id/badd&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentLeft=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentStart=</span><span class="s3">&quot;true&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;150dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;%&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/bmod&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculater&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignTop=</span><span class="s3">&quot;@+id/b0&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignRight=</span><span class="s3">&quot;@+id/textView&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignEnd=</span><span class="s3">&quot;@+id/textView&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;=&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/bresult&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculateres&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_below=</span><span class="s3">&quot;@+id/b0&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_centerHorizontal=</span><span class="s3">&quot;true&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">style=</span><span class="s3">&quot;?android:attr/buttonStyleSmall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;100dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;1&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b1&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_below=</span><span class="s3">&quot;@+id/bresult&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentLeft=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentStart=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate1&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">style=</span><span class="s3">&quot;?android:attr/buttonStyleSmall&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;150dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;2&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b2&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignTop=</span><span class="s3">&quot;@+id/b1&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toRightOf=</span><span class="s3">&quot;@+id/b1&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toEndOf=</span><span class="s3">&quot;@+id/b1&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate2&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;3&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b3&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignTop=</span><span class="s3">&quot;@+id/b2&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toRightOf=</span><span class="s3">&quot;@+id/b2&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignRight=</span><span class="s3">&quot;@+id/textView&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignEnd=</span><span class="s3">&quot;@+id/textView&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate3&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;100dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;4&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b4&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_below=</span><span class="s3">&quot;@+id/b1&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toLeftOf=</span><span class="s3">&quot;@+id/b2&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toStartOf=</span><span class="s3">&quot;@+id/b2&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate4&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;100dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;7&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b7&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_below=</span><span class="s3">&quot;@+id/b4&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentLeft=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignParentStart=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate7&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;150dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;5&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b5&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignBottom=</span><span class="s3">&quot;@+id/b4&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toRightOf=</span><span class="s3">&quot;@+id/b1&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toEndOf=</span><span class="s3">&quot;@+id/b1&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate5&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;100dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;6&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b6&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_below=</span><span class="s3">&quot;@+id/b2&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignRight=</span><span class="s3">&quot;@+id/bmod&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignEnd=</span><span class="s3">&quot;@+id/bmod&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toRightOf=</span><span class="s3">&quot;@+id/b5&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_toEndOf=</span><span class="s3">&quot;@+id/b5&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate6&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;150dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;8&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b8&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignBottom=</span><span class="s3">&quot;@+id/b7&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignLeft=</span><span class="s3">&quot;@+id/b2&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignStart=</span><span class="s3">&quot;@+id/b2&quot;</span><span class="s2"> 
+        </span><span class="s1">android:nestedScrollingEnabled=</span><span class="s3">&quot;false&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate8&quot; </span><span class="s2">/&gt; 
+ 
+    &lt;</span><span class="s4">Button</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;100dp&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:text=</span><span class="s3">&quot;9&quot;</span><span class="s2"> 
+        </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/b9&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignBottom=</span><span class="s3">&quot;@+id/b8&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignLeft=</span><span class="s3">&quot;@+id/b3&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_alignStart=</span><span class="s3">&quot;@+id/b3&quot;</span><span class="s2"> 
+        </span><span class="s1">android:onClick=</span><span class="s3">&quot;calculate9&quot; </span><span class="s2">/&gt; 
+ 
+ 
+&lt;/</span><span class="s4">RelativeLayout</span><span class="s2">&gt; 
+</span></pre>
+</body>
+</html>
